@@ -1,0 +1,12 @@
+.shadow{
+    box-shadow: none !important;
+}
+
+.box{
+    height: 10px !important;
+    width: 150px !important;
+}
+
+.fonts{
+    font-weight: 600;
+}
