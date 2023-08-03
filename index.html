@@ -9,7 +9,8 @@
 </head>
 <body>
     <header class="">
-        <div class="">
+        <!-- nav section -->
+        <div class="navbar-fixed">
             <nav class="white shadow">
                 <div class="nav-wrapper">
                     <div class="row ">
@@ -20,17 +21,18 @@
                         </div>
                         <div class="col l6 push-l1">
                             <ul class="">
-                                <li><a href="" class="orange-text fonts">Home</a></li>
-                                <li><a href="" class="orange-text fonts">Cakes</a></li>
-                                <li><a href="" class="orange-text fonts">Soups</a></li>
-                                <li><a href="" class="orange-text fonts">Chicken</a></li>
-                                <li><a href="" class="orange-text fonts">Customers</a></li>
+                                <li><a href="" class="orange-text text-darken-2 fonts">Home</a></li>
+                                <li><a href="" class="orange-text text-darken-2 fonts">Cakes</a></li>
+                                <li><a href="" class="orange-text text-darken-2 fonts">Soups</a></li>
+                                <li><a href="" class="orange-text text-darken-2 fonts">Chicken</a></li>
+                                <li><a href="" class="orange-text text-darken-2 fonts">Customers</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
+        <!-- slider section -->
         <div class="slider">
             <ul class="slides">
                 <li class=""><img src="img/cake_fruit.jpg" alt="" class="responsive-img"></li>
@@ -41,7 +43,51 @@
             </ul>
         </div>
     </header>
-    <main class=""></main>
+
+    <main class="">
+        <div class="container">
+             <h3 class="orange-text text-darken-2 left-align">Hello there, foodies!</h3>
+             <p class="font left-align">You smart, you loyal, you are a genius.You see the hedges, it's like getting a haircut, stay fresh. I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. In life there will be road blocks but we will overcome it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key.</p><br><hr>
+        <div class="row">
+            <div class="col l4">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header orange darken-2 white-text">Cakes</div>
+                        <div class="collapsible-body">
+                            <img src="img/sponge_cake.webp" alt="" class="responsive-img">
+                            <p class="">I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. It's on how you want to live your life.</p>
+                            <a href="" class="btn orange darken-2">all cake recipes</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l4">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header orange darken-2 white-text">Soups</div>
+                        <div class="collapsible-body">
+                            <img src="img/mexican_soup.webp" alt="" class="responsive-img">
+                            <p class="">The key to sucess is to keep your head above the water, never give up. The key is to drink fresh coconut. Special cloth talk</p>
+                            <a href="" class="btn orange darken-2">all soup recipes</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l4">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header orange darken-2 white-text">Chicken</div>
+                        <div class="collapsible-body">
+                            <img src="img/chicken_8.webp" alt="" class="responsive-img">
+                            <p class="">A major key, never panic. Don't panic when it gets crazy and rough, don't panic, stay calm. The key is to drink some fresh milk.</p>
+                            <a href="" class="btn orange darken-2">all chicken recipe</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><hr>
+     </div>   
+    </main>
     <footer class=""></footer>
 
 
@@ -50,6 +96,7 @@
     <script>
         $(Document).ready(function(){
             $('.slider').slider();
+            $('.collapsible').collapsible();
         });
     </script>
 </body>
