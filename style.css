@@ -29,3 +29,19 @@
 .margin{
     margin: 0px !important;
 }
+
+.padding{
+    padding: 10px 1px 10px 1px;
+}
+
+.shadow:hover{
+    box-shadow: 3px 3px 6px hsl(0, 5%, 35%);
+}
+
+.fam{
+    font-family:  monospace;
+}
+
+.word{
+    margin-right: 25px;
+}
