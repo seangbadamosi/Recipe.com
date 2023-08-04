@@ -1,5 +1,5 @@
-.shadow{
-    box-shadow: none !important;
+*{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .box{
@@ -9,4 +9,23 @@
 
 .fonts{
     font-weight: 600;
+}
+
+.font{
+    font-weight: 200;
+    font-size: large;
+    word-spacing: 2.5px;
+    line-height: 27px;
+}
+
+.chocolate-text{
+    color: hsl(25, 84%, 50%);
+}
+
+.chocolate{
+    background-color: hsl(25, 84%, 50%) !important;
+}
+
+.margin{
+    margin: 0px !important;
 }
