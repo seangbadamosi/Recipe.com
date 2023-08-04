@@ -38,10 +38,10 @@
     box-shadow: 3px 3px 6px hsl(0, 5%, 35%);
 }
 
-.fam{
-    font-family:  monospace;
+.word{
+    margin-right: 20em;
 }
 
-.word{
-    margin-right: 25px;
+.pads{
+    padding: 1em 1em 1em 1em;
 }
