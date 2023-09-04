@@ -19,7 +19,7 @@
 }
 
 .chocolate-text{
-    color: hsl(25, 84%, 50%);
+    color: hsl(25, 84%, 50%) !important;
 }
 
 .chocolate{
@@ -44,4 +44,12 @@
 
 .pads{
     padding: 1em 1em 1em 1em;
+}
+
+.padd{
+    height: 60px !important;
+}
+
+.padds{
+    margin: 1px 10px 1px 10px!important;
 }

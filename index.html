@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="img/rcon.png">
     <title>Recipe</title>
+    <style>
+        .slider .indicators .indicator-item.active {
+            background-color: #e65100;
+        }
+        </style>
 </head>
 <body>
     <header class="">
         <!-- nav section -->
-        <div class="navbar-fixed">
+        <div class="navbar-fixed hide-on-med-and-down">
             <nav class="white shadow">
                 <div class="nav-wrapper">
                     <div class="row ">
@@ -32,8 +39,26 @@
                 </div>
             </nav>
         </div>
+        <nav class="hide-on-large-only"> 
+            <div class="">
+                <ul id="slide" style="position: fixed;" class="sidenav red sidenav-fixed">
+                  <li><a class="white-text" href="#!">Description</a></li>
+                  <li><a class="white-text" href="#!">Ingredient</a></li>
+                  <li><a class="white-text" href="#!">Prepare Now</a></li>
+              </ul>
+              <div class="row">
+                  <div class="col m6 s1">
+                      <img src="/img/logo.png" width="10%" alt="" class="responsive-img">
+                  </div>
+                  <div class="col m6 s11 push-l5 right">
+                      <a href="#" data-target="slide" class="sidenav-trigger">
+                          <i class="material-icons margin right">menu</i></a>
+                      </div>
+                  </div>
+              </div>
+          </nav>
         <!-- slider section -->
-        <div class="slider" id="text1">
+        <div class="slider scrollspy" id="text1">
             <ul class="slides">
                 <li class=""><img src="img/cake_fruit.jpg" alt="" class="responsive-img"></li>
                 <li class=""><img src="img/shrimp_soup.jpg" alt="" class="responsive-img"></li>
@@ -46,26 +71,44 @@
 
     <main class="">
         <div class="container">
-             <h3 class="chocolate-text left-align" id="top">Hello there, foodies!</h3>
+             <h3 class="chocolate-text left-align scrollspy" id="top">Hello there, foodies!</h3>
              <p class="font left-align">You smart, you loyal, you are a genius.You see the hedges, it's like getting a haircut, stay fresh. I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. In life there will be road blocks but we will overcome it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key.</p><br><hr>
              <!-- collapsible section -->
-        <div class="row">
-            <div class="col l4">
+        <div class="row scrollspy"  id="text5">
+            <div class="col l4 m6 s12 ">
                 <ul class="collapsible">
                     <li>
-                        <div class="collapsible-header chocolate white-text">Cakes</div>
+                        <div class="collapsible-header chocolate white-text padd">
+                            <div class="row">
+                                <div class="col l6">
+                                    <i class="material-icons ">label_outline</i>
+                                </div>
+                                <div class="col l6 pull-l3">
+                                    <p class="padds">Cakes!</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="collapsible-body">
                             <img src="img/sponge_cake.webp" alt="" class="responsive-img">
                             <p class="">I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. It's on how you want to live your life.</p>
-                            <a href="" class="btn chocolate">all cake recipes</a>
+                            <a href="" class="btn chocolate">all cake recipes</a>1
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <ul class="collapsible">
                     <li>
-                        <div class="collapsible-header chocolate white-text">Soups</div>
+                        <div class="collapsible-header chocolate white-text padd">
+                            <div class="row">
+                                <div class="col l6">
+                                    <i class="material-icons ">label_outline</i>
+                                </div>
+                                <div class="col l6 pull-l3">
+                                    <p class="padds">Soups</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="collapsible-body">
                             <img src="img/mexican_soup.webp" alt="" class="responsive-img">
                             <p class="">The key to sucess is to keep your head above the water, never give up. The key is to drink fresh coconut. Special cloth talk</p>
@@ -74,10 +117,19 @@
                     </li>
                 </ul>
             </div>
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <ul class="collapsible">
                     <li>
-                        <div class="collapsible-header chocolate white-text">Chicken</div>
+                        <div class="collapsible-header chocolate white-text padd">
+                            <div class="row">
+                                <div class="col l6">
+                                    <i class="material-icons ">label_outline</i>
+                                </div>
+                                <div class="col l6 pull-l3">
+                                    <p class="padds">Chicken</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="collapsible-body">
                             <img src="img/chicken_8.webp" alt="" class="responsive-img">
                             <p class="">A major key, never panic. Don't panic when it gets crazy and rough, don't panic, stay calm. The key is to drink some fresh milk.</p>
@@ -86,30 +138,77 @@
                     </li>
                 </ul>
             </div>
-        </div><hr id="text5">
-        <h3 class="chocolate-text center-align" id="customers">What Our Customers say...</h3>
+        </div><hr>
+        <h3 class="chocolate-text center-align scrollspy" id="customers">What Our Customers say...</h3>
         <div class="margin">
             <!-- collection section -->
             <ul class="collection">
-                <li class="collection-item avatar">
-                    <span class="chocolate-text fonts">Ryan Kingfisher</span>
-                    <p class="font">"In life there will be road blocks but you will overcome it.Hammock talk come soon. Let's see what chef dee got that they don't want us to eat"</p> 
+                <li class="collection-item">
+                    <div class="row">
+                        <div class="col l1">
+                            <div class="chocolate-text padd">
+                                <i class="material-icons medium" class="">account_circle</i>
+                            </div>
+                        </div>
+                        <div class="col l10">
+                            <div class="margin-l">
+                                <span class="chocolate-text fonts">Ryan Kingfisher</span>
+                                <p class="font">"In life there will be road blocks but you will overcome it.Hammock talk come soon. Let's see what chef dee got that they don't want us to eat"</p> 
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="collection-item avatar">
-                    <span class="chocolate-text fonts">Jessica Ulman</span>
-                    <p class="font">"They will try to close the door on you, just open it. Look at the sunset life is amazing, life is beautiful, life is what you make it."</p>
+                <li class="collection-item ">
+                    <div class="row">
+                        <div class="col l1">
+                            <div class="chocolate-text">
+                                <i class="material-icons medium">account_circle</i>
+                            </div>
+                        </div>
+                        <div class="col l1 l10">
+                            <span class="chocolate-text fonts">Jessica Ulman</span>
+                            <p class="font">"They will try to close the door on you, just open it. Look at the sunset life is amazing, life is beautiful, life is what you make it."</p>
+                        </div>
+                    </div>
                 </li>
-                <li class="collection-item avatar">
-                    <span class="chocolate-text fonts">Olubenga Taiwo</span>
-                    <p class="font">"Learning is cool but knowing is better, and know the key to sucess. The key to more sucess is to have lot of pillows."</p>
+                <li class="collection-item">
+                    <div class="row">
+                        <div class="col l1">
+                            <div class="chocolate-text">
+                                <i class="material-icons medium">account_circle</i>
+                            </div>
+                        </div>
+                        <div class="col l10">
+                            <span class="chocolate-text fonts">Olubenga Taiwo</span>
+                            <p class="font">"Learning is cool but knowing is better, and know the key to sucess. The key to more sucess is to have lot of pillows."</p>
+                        </div>
+                    </div>
                 </li>
-                <li class="collection-item avatar">
-                    <span class="chocolate-text fonts">Kugama Namastuki</span>
-                    <p class="font">"Put it this way it took me twenty five years to get these plants, twenty five years of blood tears, and sweat and i'm never giving up, i'm just geting started.."</p>
+                <li class="collection-item">
+                    <div class="row">
+                        <div class="col l1">
+                            <div class="chocolate-text">
+                                <i class="material-icons medium">account_circle</i>
+                            </div>
+                        </div>
+                        <div class="col l10">
+                            <span class="chocolate-text fonts">Kugama Namastuki</span>
+                            <p class="font">"Put it this way it took me twenty five years to get these plants, twenty five years of blood tears, and sweat and i'm never giving up, i'm just geting started.."</p>
+                        </div>
+                    </div>
                 </li>
-                <li class="collection-item avatar">
-                    <span class="chocolate-text fonts">Lafeez Abdul</span>
-                    <p class="font">"You see that bamboo behind me though, you see that bamboo? Ain't nothin' like bamboo. Bless up. I'm up to something."</p>
+                <li class="collection-item">
+                    <div class="row">
+                        <div class="col l1">
+                            <div class="chocolate-text">
+                                <i class="material-icons medium">account_circle</i>
+                            </div>
+                        </div>
+                        <div class="col l10">
+                            <span class="chocolate-text fonts">Lafeez Abdul</span>
+                            <p class="font">"You see that bamboo behind me though, you see that bamboo? Ain't nothin' like bamboo. Bless up. I'm up to something."</p>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -120,11 +219,11 @@
             <img src="img/cake.jpg" alt="" class="responsive-img">
         </div>
     </div>  
-    <div class="container" id="text2">
-        <h3 class="chocolate-text" id="cakes">Cakes</h3>
+    <div class="container scrollspy" id="text2">
+        <h3 class="chocolate-text scrollspy" id="cakes">Cakes</h3>
         <p class="font">The other day the grass was brown, now it's green because i ain't give up. Never surrender. The key is to enjoy life, because they don't want you to enjoy life. I promise you, they don't want you to jetski, they don't want you to smile. Congratulations, you play yourself.</p>
         <div class="row">
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <div class="card shadow">
                     <div class="card-image">
                         <img src="img/sponge_cake.webp" alt="" class="responsive-img">
@@ -143,7 +242,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <div class="card shadow">
                     <div class="card-image">
                         <img src="img/velvet_cake.webp" alt="" class="responsive-img">
@@ -162,7 +261,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <div class="card shadow">
                     <div class="card-image">
                         <img src="img/courgette_cake.webp" alt="" class="responsive-img">
@@ -183,7 +282,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <div class="card shadow">
                     <div class="card-image">
                         <img src="img/chocolate_2.webp" alt="" class="responsive-img">
@@ -202,7 +301,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <div class="card shadow">
                     <div class="card-image">
                         <img src="img/coffeeslab_cake.webp" alt="" class="responsive-img">
@@ -221,7 +320,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <div class="card shadow">
                     <div class="card-image">
                         <img src="img/pistachio_cake.webp" alt="" class="responsive-img">
@@ -242,7 +341,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <div class="card shadow">
                     <div class="card-image">
                         <img src="img/polenta_cake.webp" alt="" class="responsive-img">
@@ -261,7 +360,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <div class="card shadow">
                     <div class="card-image">
                         <img src="img/buttermilk_cake.webp" alt="" class="responsive-img">
@@ -280,7 +379,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col l4">
+            <div class="col l4 m6 s12">
                 <div class="card shadow">
                     <div class="card-image">
                         <img src="img/chocolate_1.webp" alt="" class="responsive-img">
@@ -306,10 +405,10 @@
         <div class="parallax">
             <img src="img/soup.jpg" alt="" class="responsive-img">
         </div>
-    </div>  
-    <div class="container" id="text3">
-        <h3 class="chocolate-text" id="soup" >Soups</h3>
-        <p class="font">The other day the grass was brown, now it's green because i ain't give up. Never surrender. The key is to enjoy life, because they don't want you to enjoy life. I promise you, they don't want you to jetski, they don't want you to smile. Congratulations, you play yourself.</p>
+    </div> 
+    <div class="container scrollspy" id="text3">
+        <h3 class="chocolate-text scrollspy" id="soup">Soups</h3>
+        <p class="font">The other day the grass was brown, now it's green because i ain't give up. Never surrCOOK NOWhe key is to enjoy life, because they don't want you to enjoy life. I promise you, they don't want you to jetski, they don't want you to smile. Congratulations, you play yourself.</p>
         <div class="row">
             <div class="col l4">
                 <div class="card shadow">
@@ -322,10 +421,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                            <a href="" class="chocolate-text">COOK NOW</a>
                         </div>
                     </div>
                 </div>
@@ -341,10 +440,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                            <a href="" class="chocolate-text">COOK NOW</a>
                         </div>
                     </div>
                 </div>
@@ -360,10 +459,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                            <a href="" class="chocolate-text">COOK NOW</a>
                         </div>
                     </div>
                 </div>
@@ -381,10 +480,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                            <a href="" class="chocolate-text">COOK NOW</a>
                         </div>
                     </div>
                 </div>
@@ -400,10 +499,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                            <a href="" class="chocolate-text">COOK NOW</a>
                         </div>
                     </div>
                 </div>
@@ -419,10 +518,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                            <a href="" class="chocolate-text">COOK NOW</a>
                         </div>
                     </div>
                 </div>
@@ -440,10 +539,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                            <a href="" class="chocolate-text">COOK NOW</a>
                         </div>
                     </div>
                 </div>
@@ -459,10 +558,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                            <a href="" class="chocolate-text">COOK NOW</a>
                         </div>
                     </div>
                 </div>
@@ -478,10 +577,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                            <a href="" class="chocolate-text">COOK NOW</a>
                         </div>
                     </div>
                 </div>
@@ -494,8 +593,8 @@
             <img src="img/chicken.jpg" alt="" class="responsive-img">
         </div>
     </div>  
-    <div class="container" id="text4">
-        <h3 class="chocolate-text" id="chicken">Chicken</h3>
+    <div class="container scrollspy" id="text4">
+        <h3 class="chocolate-text scrollspy" id="chicken">Chicken</h3>
         <p class="font">The other day the grass was brown, now it's green because i ain't give up. Never surrender. The key is to enjoy life, because they don't want you to enjoy life. I promise you, they don't want you to jetski, they don't want you to smile. Congratulations, you play yourself.</p>
         <div class="row">
             <div class="col l4">
@@ -509,10 +608,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
-                        <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                        <div class="col l6">
+                            <a href="" class="chocolate-text">PREPARE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -528,10 +627,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
-                        <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                        <div class="col l6">
+                            <a href="" class="chocolate-text">PREPARE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -547,10 +646,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
-                        <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                        <div class="col l6">
+                            <a href="" class="chocolate-text">PREPARE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -568,10 +667,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
-                        <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                        <div class="col l6">
+                            <a href="" class="chocolate-text">PREPARE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -587,10 +686,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
-                        <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                        <div class="col l6">
+                            <a href="" class="chocolate-text">PREPARE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -606,10 +705,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
-                        <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                        <div class="col l6">
+                            <a href="" class="chocolate-text">PREPARE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -627,10 +726,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
-                        <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                        <div class="col l6">
+                            <a href="" class="chocolate-text">PREPARE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -646,10 +745,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
-                        <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                        <div class="col l6">
+                            <a href="" class="chocolate-text">PREPARE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -665,10 +764,10 @@
                     </div><hr>
                     <div class="row padding">
                         <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">INGREDIENTS</a>
+                            <a href="" class="chocolate-text">CONTENTS</a>
                         </div>
-                        <div class="col l6 push-l1">
-                            <a href="" class="chocolate-text">BAKE OFF</a>
+                        <div class="col l6">
+                            <a href="" class="chocolate-text">PREPARE NOW</a>
                         </div>
                     </div>
                 </div>
@@ -676,6 +775,7 @@
         </div>
     </div>
     </main>
+
     <footer class="black">
         <div class="row">
             <div class=" col l6 push-l1">
@@ -692,7 +792,7 @@
             </div>
         </div>
         <div class="footer-copyright chocolate">
-            <p class="white-text center-align pads">©2020 Recipe.com | CORE-TECH</p>
+            <p class="white-text center-align pads">©2023 Recipe.com | EMOJI</p>
         </div>
     </footer>
 
@@ -704,6 +804,7 @@
             $('.slider').slider();
             $('.collapsible').collapsible();
             $('.parallax').parallax();
+            $('.scrollspy').scrollSpy();
         });
     </script>
 </body>
