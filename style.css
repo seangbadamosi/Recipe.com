@@ -35,7 +35,7 @@
 }
 
 .shadow:hover{
-    box-shadow: 3px 3px 6px hsl(0, 5%, 35%);
+    box-shadow: 1px 1px 10px hsl(0, 5%, 35%);
 }
 
 .word{
@@ -43,7 +43,7 @@
 }
 
 .pads{
-    padding: 1em 1em 1em 1em;
+    padding: 1em;
 }
 
 .padd{
@@ -52,4 +52,28 @@
 
 .padds{
     margin: 1px 10px 1px 10px!important;
+}
+
+.mt-1{
+    margin-top: 100vh !important;
+}
+
+.mb-1{
+    margin-bottom: -2vh;
+}
+
+.mb-2{
+    margin-bottom: 4vh;
+}
+
+.mt-2{
+    margin-top: 8.7vh;
+}
+
+.flex{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    gap: 2vw !important;
 }

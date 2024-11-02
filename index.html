@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="/css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="img/rcon.png">
-    <title>Recipe</title>
+    <title>Recipe.com</title>
     <style>
         .slider .indicators .indicator-item.active {
-            background-color: #e65100;
+            background-color: #e65100 !important;
         }
-        </style>
+        </style> 
 </head>
 <body>
     <header class="">
         <!-- nav section -->
-        <div class="navbar-fixed hide-on-med-and-down">
-            <nav class="white shadow">
+        <div class="navbar-fixed hide-on-med-and-down box">
+            <nav class="white">
                 <div class="nav-wrapper">
                     <div class="row ">
                         <div class="col l6 push-l1">
@@ -39,26 +39,26 @@
                 </div>
             </nav>
         </div>
-        <nav class="hide-on-large-only"> 
+        <nav class="hide-on-large-only white"> 
             <div class="">
-                <ul id="slide" style="position: fixed;" class="sidenav red sidenav-fixed">
-                  <li><a class="white-text" href="#!">Description</a></li>
-                  <li><a class="white-text" href="#!">Ingredient</a></li>
-                  <li><a class="white-text" href="#!">Prepare Now</a></li>
+                <ul id="side" class="sidenav sidenav-fixed">
+                  <li><a class="chocolate-text" href="#!">Description</a></li>
+                  <li><a class="chocolate-text" href="#!">Ingredient</a></li>
+                  <li><a class="chocolate-text" href="#!">Prepare Now</a></li>
               </ul>
-              <div class="row">
-                  <div class="col m6 s1">
-                      <img src="/img/logo.png" width="10%" alt="" class="responsive-img">
+              <div class="flex">
+                  <div class="">
+                      <img src="/img/logo.png" width="20%" alt="" class="responsive-img">
                   </div>
-                  <div class="col m6 s11 push-l5 right">
-                      <a href="#" data-target="slide" class="sidenav-trigger">
-                          <i class="material-icons margin right">menu</i></a>
+                  <div class="">
+                      <a href="#" data-target="side" class="sidenav-trigger">
+                          <i class="material-icons black-text">menu</i></a>
                       </div>
                   </div>
               </div>
           </nav>
         <!-- slider section -->
-        <div class="slider scrollspy" id="text1">
+        <div class="slider scrollspy fullscreen mt-2" id="text1">
             <ul class="slides">
                 <li class=""><img src="img/cake_fruit.jpg" alt="" class="responsive-img"></li>
                 <li class=""><img src="img/shrimp_soup.jpg" alt="" class="responsive-img"></li>
@@ -70,7 +70,7 @@
     </header>
 
     <main class="">
-        <div class="container">
+        <div class="container mt-1">
              <h3 class="chocolate-text left-align scrollspy" id="top">Hello there, foodies!</h3>
              <p class="font left-align">You smart, you loyal, you are a genius.You see the hedges, it's like getting a haircut, stay fresh. I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. In life there will be road blocks but we will overcome it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key.</p><br><hr>
              <!-- collapsible section -->
@@ -776,7 +776,7 @@
     </div>
     </main>
 
-    <footer class="black">
+    <footer class="black mb-1">
         <div class="row">
             <div class=" col l6 push-l1">
                 <h5 class="chocolate-text">Recipe.<span class="grey-text">com</span></h5>
@@ -805,6 +805,7 @@
             $('.collapsible').collapsible();
             $('.parallax').parallax();
             $('.scrollspy').scrollSpy();
+            $('.sidenav').sidenav();
         });
     </script>
 </body>
