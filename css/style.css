@@ -71,9 +71,9 @@
 }
 
 .flex{
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-evenly !important;
-    align-items: center !important;
-    gap: 2vw !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60vw;
 }

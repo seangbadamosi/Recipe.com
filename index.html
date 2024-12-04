@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="/css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="img/rcon.png">
@@ -39,24 +39,25 @@
                 </div>
             </nav>
         </div>
-        <nav class="hide-on-large-only white"> 
+        <!-- mobile section -->
+        <nav class="hide-on-large-only white navbar-fixed"> 
             <div class="">
-                <ul id="side" class="sidenav sidenav-fixed">
-                  <li><a class="chocolate-text" href="#!">Description</a></li>
-                  <li><a class="chocolate-text" href="#!">Ingredient</a></li>
-                  <li><a class="chocolate-text" href="#!">Prepare Now</a></li>
-              </ul>
-              <div class="flex">
-                  <div class="">
-                      <img src="/img/logo.png" width="20%" alt="" class="responsive-img">
-                  </div>
-                  <div class="">
-                      <a href="#" data-target="side" class="sidenav-trigger">
-                          <i class="material-icons black-text">menu</i></a>
-                      </div>
-                  </div>
-              </div>
-          </nav>
+                <ul id="side" class="sidenav">
+                    <li><a class="chocolate-text" href="#!">Description</a></li>
+                    <li><a class="chocolate-text" href="#!">Ingredient</a></li>
+                    <li><a class="chocolate-text" href="#!">Prepare Now</a></li>
+                </ul>
+                <div class="flex">
+                    <div class="flex">
+                        <img src="/img/logo.png" width="55%" alt="" class="responsive-img">
+                    </div>
+                    <div class="">
+                        <a href="#" data-target="side" class="sidenav-trigger">
+                        <i class="material-icons chocolate-text">menu</i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <!-- slider section -->
         <div class="slider scrollspy fullscreen mt-2" id="text1">
             <ul class="slides">
@@ -71,9 +72,9 @@
 
     <main class="">
         <div class="container mt-1">
-             <h3 class="chocolate-text left-align scrollspy" id="top">Hello there, foodies!</h3>
-             <p class="font left-align">You smart, you loyal, you are a genius.You see the hedges, it's like getting a haircut, stay fresh. I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. In life there will be road blocks but we will overcome it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key.</p><br><hr>
-             <!-- collapsible section -->
+            <h3 class="chocolate-text left-align scrollspy" id="top">Hello there, foodies!</h3>
+            <p class="font left-align">You smart, you loyal, you are a genius.You see the hedges, it's like getting a haircut, stay fresh. I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. In life there will be road blocks but we will overcome it. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key.</p><br><hr>
+            <!-- collapsible section -->
         <div class="row scrollspy"  id="text5">
             <div class="col l4 m6 s12 ">
                 <ul class="collapsible">
@@ -212,9 +213,9 @@
                 </li>
             </ul>
         </div>
-     </div> 
-     <!-- first grid section -->
-     <div class="parallax-container">
+    </div> 
+    <!-- first grid section -->
+    <div class="parallax-container">
         <div class="parallax">
             <img src="img/cake.jpg" alt="" class="responsive-img">
         </div>
