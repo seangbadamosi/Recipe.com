@@ -1,5 +1,6 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin-right: 0px;
 }
 
 .box{
@@ -36,10 +37,6 @@
 
 .shadow:hover{
     box-shadow: 1px 1px 10px hsl(0, 5%, 35%);
-}
-
-.word{
-    margin-right: 20em;
 }
 
 .pads{
