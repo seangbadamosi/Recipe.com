@@ -23,6 +23,10 @@
     color: hsl(25, 84%, 50%) !important;
 }
 
+.card-action > .chocolate-text{
+    font-size: small;
+}
+
 .chocolate{
     background-color: hsl(25, 84%, 50%) !important;
 }
@@ -32,7 +36,7 @@
 }
 
 .padding{
-    padding: 10px 1px 10px 1px;
+    padding: 10px 0px 10px 0px;
 }
 
 .shadow:hover{
